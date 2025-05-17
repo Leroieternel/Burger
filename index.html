@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point Annotation Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Point Annotation Tool</h1>
+
+        <!-- Somewhere below your main content in index.html -->
+<div style="margin-top:5px;">
+    <a href="README.html" target="_blank" style="color:#007bff; text-decoration:none; font-weight:bold;">
+        View Instructions (README)
+    </a>
+</div>
+
+
+    <div id="progress">Sequence: <span id="sequenceName"></span> (<span id="sequenceIndex"></span>/<span id="totalSequences"></span>)</div>
+
+    <!-- Category segmented control -->
+    <div class="category-toggle-container index-mode" id="categoryToggle">
+        <div class="toggle-knob"></div>
+        <div class="category-option index">Index</div>
+        <div class="category-option thumb">Thumb</div>
+    </div>
+
+    <div id="bigImage">
+        <div class="row">
+            <!-- Left = seqImages[1], Right = seqImages[0] -->
+            <div class="image-container">
+                <div class="frame-label">Contact frame</div>
+                <canvas id="leftImage" class="smallImage"></canvas>
+            </div>
+            <div class="image-container">
+                <div class="frame-label">Prediction frame</div>
+                <canvas id="rightImage" class="smallImage"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <input type="file" id="imageLoader" webkitdirectory directory multiple style="display:none;">
+        <button id="loadSequencesButton">Load Sequences</button>
+        
+        <input type="file" id="annotationLoader" accept="application/json" style="display:none;">
+        <button id="loadAnnotationsButton">Load Annotations</button>
+        <button id="zoomInContactRegionButton" disabled>Zoom in Contact Region</button> 
+
+        <button id="occludedButton">Occluded</button>
+        <button id="undoButton">Undo</button>
+        <button id="saveButton">Save Annotations</button>
+        <button id="resetImageButton">Reset Image Annotations</button>
+        <button id="resetAllButton">Reset All Annotations</button>
+    </div>
+
+    <div class="control-panel">
+        <label for="zoom-slider">Zoom Level: <span id="zoom-value">2</span>x</label>
+        <input type="range" id="zoom-slider" min="1" max="5" value="2" step="1">
+    </div>
+    
+
+    <div id="magnifier"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

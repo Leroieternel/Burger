@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use the Image Annotation Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #007bff;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 40px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>How to Use the Image Annotation Tool</h1>
+    <p>This tool helps you annotate points (Index or Thumb) on pairs of images belonging to a sequence. Follow the steps below to get started.</p>
+
+    <h2>Loading Sequences</h2>
+    <ol>
+        <li>Click on the <strong>Load Sequences</strong> button.</li>
+        <li>Select a directory containing your images. The tool expects pairs of images that share a prefix, with only the last part of the name being different.</li>
+        <li>Once loaded, use the left/right arrow keys to navigate through sequences.</li>
+    </ol>
+
+    <h2>Loading Existing Annotations</h2>
+    <ol>
+        <li>Click on the <strong>Load Annotations</strong> button.</li>
+        <li>Select a previously saved <code>.json</code> file of annotations.</li>
+        <li>The tool will merge these annotations with your current sequences.</li>
+    </ol>
+
+    <h2>Selecting Categories (Index/Thumb)</h2>
+    <p>Use the toggle at the top (the segmented control) to switch between "Index" and "Thumb" annotation modes.  
+    - When in "Index" mode, newly placed points are colored <span style="color:red;">red</span>.  
+    - When in "Thumb" mode, newly placed points are colored <span style="color:green;">green</span>.</p>
+
+    <h2>Annotating Points</h2>
+    <ul>
+        <li>Each sequence has two images: "Contract" (left) and "Prediction" (right).</li>
+        <li>Click on the image where you want to place a point.</li>
+        <li>You can place up to 2 points per image (1 Index and 1 Thumb), so a total of 4 points per sequence (Index + Thumb on both images).</li>
+        <li>If you attempt to place a second point of the same category on the same image, or more than 4 total points, you will get a warning.</li>
+        <li>To mark a point as <strong>Occluded</strong>, click the "Occluded" button first, then click on the image. The annotated point will have a distinct look (outlined, not filled).</li>
+    </ul>
+
+    <h2>Navigating Between Sequences</h2>
+    <ul>
+        <li>Use the <strong>Left</strong> and <strong>Right</strong> arrow keys to move to the previous or next sequence.</li>
+        <li>The progress indicator at the top shows your current sequence and how many sequences are in total.</li>
+    </ul>
+
+    <h2>Zooming</h2>
+    <ul>
+        <li>Use the <strong>Zoom Level</strong> slider at the bottom to magnify the area under the cursor.</li>
+        <li>At zoom level 1x, the magnifier is disabled.</li>
+        <li>Increasing the zoom level allows you to see a magnified area in a circular lens.</li>
+    </ul>
+
+
+
+    <h2>Saving and Resetting</h2>
+    <ul>
+        <li>Click <strong>Save Annotations</strong> to download a JSON file of all your current annotations.</li>
+        <li>Click <strong>Reset Image Annotations</strong> to clear annotations for the current sequence.</li>
+        <li>Click <strong>Reset All Annotations</strong> to clear annotations for all sequences.</li>
+        <li>Click <strong>Undo</strong> to remove the last placed point.</li>
+    </ul>
+</body>
+</html>
