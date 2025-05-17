@@ -69,7 +69,7 @@ async function start(){
   tbox.spellcheck = false;
   tbox.id = "myInput";
 
-  username.appendChild(document.createTextNode("visitor@patricksSite"));
+  username.appendChild(document.createTextNode("visitor@xiangyisSite"));
   username.className = "greenText";
 
   col.appendChild(document.createTextNode(":"));
@@ -117,7 +117,7 @@ function printUser(){
   let til = document.createElement("span");
   let dol = document.createElement("span");
 
-  username.appendChild(document.createTextNode("visitor@patricksSite"));
+  username.appendChild(document.createTextNode("visitor@xiangyisSite"));
   username.className = "greenText";
 
   col.appendChild(document.createTextNode(":"));
@@ -365,12 +365,8 @@ function aboutme(){
   const par = document.createElement("p");
   par.className = "half";
 
-  par.textContent = "Hello, my name is Patrick McCarty. I am a fourth year computer science"
-      + " student at the University of Wisconsin-Madison. I spent half my life in Brazil and the other"
-      + " the other half in Wisconsin. I have only been coding for around a year and a half but"
-      + " I have learned a lot in that time. I am excited to continue inproving my developer skill"
-      + " with new and exciting projects. I prefer low level programming involving C but many"  
-      + " areas of CS interest me.";
+  par.textContent = "Hello, my name is Xiangyi Jia. I am a second year Master's student at ETH Zurich"
+      + " majoring in Electrical Engineering and Information Technology.";
 
   store.appendChild(par);
   document.getElementById("invisible_div").appendChild(par);
@@ -384,9 +380,9 @@ function email(){
   const store = document.createElement("p");
   store.textContent = "my email: ";
   const link = document.createElement("a");
-  link.textContent = "psmccarty@wisc.edu";
+  link.textContent = "jiaxia@ethz.ch";
 
-  link.href = "mailto:psmccarty@wisc.edu";
+  link.href = "mailto:jiaxia@ethz.ch";
   store.appendChild(link);
   document.getElementById("invisible_div").appendChild(store);
 }
