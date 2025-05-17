@@ -398,7 +398,7 @@ function projects(){
   store.className = "half";
   const link = document.createElement("a");
   link.textContent = "github";
-  link.href = "https://github.com/psmccarty";
+  link.href = "https://github.com/Leroieternel";
   link.target = "_blank";
   store.appendChild(link);
   document.getElementById("invisible_div").appendChild(store);
