@@ -1,4 +1,4 @@
 # Terminal-Website
-A personal website that imitates a command line terminal such as Linux. https://pages.cs.wisc.edu/~pmccarty/
+A personal website that imitates a command line terminal such as Linux. https://mcxiangalds.com/
 
-<img src="website_pic.png" width=550/>
+<img src="home.png" width=550/>
