@@ -408,7 +408,7 @@ function projects(){
  * opens resume in a new tab
  */
 function resume(){
-	window.open('resume.pdf');
+	window.open('CV_Xiangyi_Jia.pdf');
 }
 
 /**
