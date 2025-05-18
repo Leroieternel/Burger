@@ -162,10 +162,12 @@ function printUser(){
     email();
   } else if(x.toLowerCase() == "projects"){
     projects();
+  } else if(x.toLowerCase() == "linkedin"){
+	  linkedin();
   } else if(x.toLowerCase() == "resume"){
-	resume();
+	  resume();
   }else if(x.toLowerCase() == "history"){
-	history();
+	  history();
   }else{
     invalid();
   }
@@ -195,6 +197,7 @@ function help(){
   commands[1] = 'clear' + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + 'clear terminal';
   commands[2] = 'aboutme' + '\xa0\xa0\xa0\xa0\xa0' + 'describes who I am';
   commands[3] = 'projects' + '\xa0\xa0\xa0\xa0' + 'display projects';
+  commands[3] = 'linkedin' + '\xa0\xa0\xa0\xa0' + 'display linkedin profile';
   commands[4] = 'email' + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + 'display email';
   commands[5] = 'logo' + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + 'display logo';
   commands[6] = 'resume' + '\xa0\xa0\xa0\xa0\xa0\xa0' + 'display resume in a new tab';
@@ -399,6 +402,22 @@ function projects(){
   const link = document.createElement("a");
   link.textContent = "github";
   link.href = "https://github.com/Leroieternel";
+  link.target = "_blank";
+  store.appendChild(link);
+  document.getElementById("invisible_div").appendChild(store);
+}
+
+/** 
+ * gives link to linkedin
+ */
+function linkedin(){
+  const store = document.createElement("p");
+  store.textContent = "Here is my linkedin profile: ";
+    
+  store.className = "half";
+  const link = document.createElement("a");
+  link.textContent = "linkedin";
+  link.href = "https://www.linkedin.com/in/xiangyi-jia-3a4a34232/";
   link.target = "_blank";
   store.appendChild(link);
   document.getElementById("invisible_div").appendChild(store);
