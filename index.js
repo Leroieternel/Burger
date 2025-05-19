@@ -197,11 +197,11 @@ function help(){
   commands[1] = 'clear' + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + 'clear terminal';
   commands[2] = 'aboutme' + '\xa0\xa0\xa0\xa0\xa0' + 'describes who I am';
   commands[3] = 'projects' + '\xa0\xa0\xa0\xa0' + 'display projects';
-  commands[3] = 'linkedin' + '\xa0\xa0\xa0\xa0' + 'display linkedin profile';
-  commands[4] = 'email' + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + 'display email';
-  commands[5] = 'logo' + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + 'display logo';
-  commands[6] = 'resume' + '\xa0\xa0\xa0\xa0\xa0\xa0' + 'display resume in a new tab';
-  commands[7] = 'history' + '\xa0\xa0\xa0\xa0\xa0' + 'display previously inputed commands';
+  commands[4] = 'linkedin' + '\xa0\xa0\xa0\xa0' + 'display linkedin profile';
+  commands[5] = 'email' + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + 'display email';
+  commands[6] = 'logo' + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + 'display logo';
+  commands[7] = 'resume' + '\xa0\xa0\xa0\xa0\xa0\xa0' + 'display resume in a new tab';
+  commands[8] = 'history' + '\xa0\xa0\xa0\xa0\xa0' + 'display previously inputed commands';
 
   for(let i = 0; i < commands.length; i++){
     let buf = document.createElement("p");
